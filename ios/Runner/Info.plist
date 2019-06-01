@@ -7,6 +7,12 @@
   <true/>
   <!-- to here. -->
 	<key>CFBundleDevelopmentRegion</key>
+  <!-- add location permission -->
+  <key>NSLocationAlwaysUsageDescription</key>
+  <string>Needed to access location</string>
+  <key>NSLocationWhenInUseUsageDescription</key>
+  <string>Needed to access location</string>
+  <!-- end here -->
 	<string>en</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
