@@ -1,3 +1,4 @@
+import 'package:flatte/widget/login.dart';
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 
@@ -7,7 +8,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Flatte',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
