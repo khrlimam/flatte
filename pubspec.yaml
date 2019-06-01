@@ -25,6 +25,7 @@ dependencies:
   cupertino_icons: ^0.1.2
   flare_splash_screen: ^2.0.1+2
   curved_navigation_bar:
+  font_awesome_flutter: ^8.0.1
 
 dev_dependencies:
   flutter_test:

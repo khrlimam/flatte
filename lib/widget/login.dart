@@ -1,3 +1,5 @@
+import 'package:flatte/widget/profile.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 import 'home.dart';
@@ -51,7 +53,7 @@ class _LoginState extends State<Login> {
                         Navigator.pushReplacement(
                             context,
                             MaterialPageRoute(
-                                builder: (BuildContext context) => BottomNavBar()));
+                                builder: (BuildContext context) => Profil()));
                       }),
                   ),
             )

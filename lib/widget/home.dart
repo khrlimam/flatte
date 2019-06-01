@@ -1,12 +1,15 @@
+import 'package:flatte/widget/create.dart';
+import 'package:flatte/widget/profile.dart';
+import 'package:flatte/widget/profile_page.dart';
 import 'package:flutter/material.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 
-class BottomNavBar extends StatefulWidget {
+class HomePage extends StatefulWidget {
   @override
-  _BottomNavBarState createState() => _BottomNavBarState();
+  _HomePageState createState() => _HomePageState();
 }
 
-class _BottomNavBarState extends State<BottomNavBar> {
+class _HomePageState extends State<HomePage> {
   PageController _pageController;
   int _page = 0;
   Color _color = Colors.white;
@@ -20,19 +23,21 @@ class _BottomNavBarState extends State<BottomNavBar> {
           index: _page,
           height: 60.0,
           items: <Widget>[
-            Icon(Icons.map, size: 30,),
-            Icon(Icons.create, size: 30),
-            Icon(Icons.book, size: 30),
-            Icon(Icons.perm_identity, size: 30),
+            Icon(Icons.map, size: 30, color: Colors.white,),
+            Icon(Icons.create, size: 30, color: Colors.white,),
+            Icon(Icons.perm_identity, size: 30, color: Colors.white,),
           ],
-          color: Colors.lightBlue[100],
-          buttonBackgroundColor: Colors.brown,
+          color: Colors.lightBlue,
+          buttonBackgroundColor: Color(0xFF707070),
           backgroundColor: Colors.white,
           animationCurve: Curves.easeInOut,
           animationDuration: Duration(milliseconds: 500),
-          onTap: navigationToPage,
+          onTap: (int i) => {
+            navigationToPage(i)
+          },
         ),
-        body: PageView(
+        body: 
+         PageView(
           children: <Widget>[
             Container(
               child: Center(
@@ -41,17 +46,12 @@ class _BottomNavBarState extends State<BottomNavBar> {
             ),
             Container(
               child: Center(
-                child: Text("Create"),
+                child: Create(),
               ),
             ),
             Container(
               child: Center(
-                child: Text("Profil"),
-              )
-            ),
-            Container(
-              child: Center(
-                child: Text("detail"),
+                child: ProfilePage(),
               )
             ),
           ],
@@ -74,9 +74,6 @@ class _BottomNavBarState extends State<BottomNavBar> {
         _tempColor = Colors.white;
         break;
       case 2:
-        _tempColor = Colors.white;
-        break;
-      case 3:
         _tempColor = Colors.white;
         break;
     }
