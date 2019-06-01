@@ -26,6 +26,7 @@ dependencies:
   flare_splash_screen: ^2.0.1+2
   curved_navigation_bar:
   font_awesome_flutter: ^8.0.1
+  cuberto_bottom_bar: ^0.0.2
 
 dev_dependencies:
   flutter_test:

@@ -3,6 +3,7 @@ import 'package:flatte/widget/profile.dart';
 import 'package:flatte/widget/profile_page.dart';
 import 'package:flutter/material.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
+import 'package:cuberto_bottom_bar/cuberto_bottom_bar.dart';
 
 class HomePage extends StatefulWidget {
   @override

@@ -41,6 +41,11 @@ class _CreateState extends State<Create> {
               maxLines: 6,
               keyboardType: TextInputType.text,
             ),
+            MaterialButton(
+              color: Color(0xFF00838f),
+              child: Text("Send", style: TextStyle(color: Colors.white),),
+              onPressed: (){},
+            )
           ],
         ),
       ),
